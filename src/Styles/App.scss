@@ -1,0 +1,32 @@
+@media screen and (min-width: 768px) {
+    .oraliq{
+        margin-top: 10px;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .oraliq{
+        margin-top: 90px;
+    }
+}
+
+
+html, body, #root {
+  height: 100%;
+}
+
+.App {
+  min-height: 100vh;     /* ekran bo'yi */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Kontent qismi o'sadi, footer pastga "itiladi" */
+.App__main {
+  flex: 1;
+}
+
+/* Navbar fixed bo'lsa: content tepaga kirib ketmasin
+   Navbar balandligini shu yerda yozasiz (masalan 80px) */
