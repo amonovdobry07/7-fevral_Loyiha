@@ -26,7 +26,7 @@
           <div className="nav-container">
             <div className="nav-logo">
               <h1 className="h1">
-                <Link to="/">_Amonoff_</Link>
+                <Link to="/">Khalimov</Link>
               </h1>
             </div>
             <div className="nav-links">
