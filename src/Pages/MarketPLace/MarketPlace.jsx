@@ -10,25 +10,25 @@ const LINKS = [
   {
     name: "Wildberries",
     meta: "Rasmiy sahifa • Tez yetkazish",
-    href: "#",
+    href: "https://www.wildberries.uz/catalog/168511523/detail.aspx?targetUrl=EX",
     logo: wb,
   },
   {
     name: "Ozon",
     meta: "To‘lov himoyasi • Qulay buyurtma",
-    href: "#",
+    href: "https://uz.ozon.com/category/knigi-16500/",
     logo: ozon,
   },
   {
     name: "Yandex Market",
     meta: "Ishonchli logistika • Tracking",
-    href: "#",
+    href: "https://market.yandex.uz/",
     logo: yandex,
   },
   {
     name: "Uzum Market",
     meta: "Mahalliy servis • Tezkor",
-    href: "#",
+    href: "https://uzum.uz/uz",
     logo: uzum,
   },
 ];
@@ -62,9 +62,8 @@ export default function MarketPlaceSeal() {
                   key={idx}
                   className="mpSeal__link"
                   href={l.href}
-                  role="listitem"
-                  target="_blank"
                   rel="noreferrer"
+                  role="listitem"
                 >
                   <div className="mpSeal__logoBox" aria-hidden="true">
                     <img className="mpSeal__logo" src={l.logo} alt="" />
@@ -75,7 +74,7 @@ export default function MarketPlaceSeal() {
                     <span className="mpSeal__meta">{l.meta}</span>
                   </div>
 
-                  <span className="mpSeal__go">→</span>
+                  <span className="mpSeal__go" aria-hidden="true">→</span>
                 </a>
               ))}
             </div>
