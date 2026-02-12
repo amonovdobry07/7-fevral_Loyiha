@@ -258,7 +258,7 @@ const Home = () => {
           </div>
 
           <div className="contactBtns">
-            <a className="btn btn--primary" href="#">Telegram</a>
+            <a className="btn btn--primary" href="https://t.me/UstaMirjon_0718" target="_blank" rel="noreferrer">Telegram</a>
             <a className="btn btn--ghost" href="#">Qo‘ng‘iroq</a>
           </div>
         </div>

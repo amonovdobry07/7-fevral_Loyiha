@@ -57,9 +57,8 @@ export default function Footer() {
 
           <div className="ft__miniLinks" aria-label="Bog‘lanish linklari">
             {/* Bu yerga real linklarni qo'yasan */}
-            <a className="ft__chip" href="#" target="_blank" rel="noreferrer">Telegram</a>
+            <a className="ft__chip" href="https://t.me/UstaMirjon_0718" target="_blank" rel="noreferrer">Telegram</a>
             <a className="ft__chip" href="tel:+998000000000">Qo‘ng‘iroq</a>
-            <a className="ft__chip" href="#contact">Kontakt</a>
           </div>
         </div>
       </div>

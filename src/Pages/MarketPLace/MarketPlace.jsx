@@ -1,5 +1,6 @@
 import React from "react";
 import "../../Styles/MarketPlace.scss";
+import { useNavigate } from "react-router-dom";
 
 import wb from "../../assets/logos/wildberries.png";
 import ozon from "../../assets/logos/ozon.png";
@@ -8,24 +9,28 @@ import uzum from "../../assets/logos/uzum.png";
 
 const LINKS = [
   {
+    key: "wb",
     name: "Wildberries",
     meta: "Rasmiy sahifa • Tez yetkazish",
     href: "https://www.wildberries.uz/catalog/168511523/detail.aspx?targetUrl=EX",
     logo: wb,
   },
   {
+    key: "ozon",
     name: "Ozon",
     meta: "To‘lov himoyasi • Qulay buyurtma",
     href: "https://uz.ozon.com/category/knigi-16500/",
     logo: ozon,
   },
   {
+    key: "yandex",
     name: "Yandex Market",
     meta: "Ishonchli logistika • Tracking",
     href: "https://market.yandex.uz/",
     logo: yandex,
   },
   {
+    key: "uzum",
     name: "Uzum Market",
     meta: "Mahalliy servis • Tezkor",
     href: "https://uzum.uz/uz",
@@ -33,7 +38,14 @@ const LINKS = [
   },
 ];
 
-export default function MarketPlaceSeal() {
+export default function MarketPlace() {
+  const navigate = useNavigate();
+
+  const goTo = (key) => {
+    // 🔥 ichki sahifaga o‘tadi
+    navigate(`/MarketPlace/${key}`);
+  };
+
   return (
     <section className="mpSeal" id="marketplace" aria-label="MarketPlace">
       <div className="container mpSeal__inner">
@@ -61,9 +73,13 @@ export default function MarketPlaceSeal() {
                 <a
                   key={idx}
                   className="mpSeal__link"
-                  href={l.href}
+                  href="#"
                   rel="noreferrer"
                   role="listitem"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    goTo(l.key);
+                  }}
                 >
                   <div className="mpSeal__logoBox" aria-hidden="true">
                     <img className="mpSeal__logo" src={l.logo} alt="" />

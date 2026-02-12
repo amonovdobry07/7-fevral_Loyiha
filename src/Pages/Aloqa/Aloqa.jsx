@@ -114,7 +114,7 @@ export default function Aloqa() {
                   So‘rov yuborish
                 </button>
 
-                <a className="cBtn cBtn--ghost" href="https://t.me/" target="_blank" rel="noreferrer">
+                <a className="cBtn cBtn--ghost"href="https://t.me/UstaMirjon_0718" target="_blank" rel="noreferrer">
                   Telegram orqali
                 </a>
 

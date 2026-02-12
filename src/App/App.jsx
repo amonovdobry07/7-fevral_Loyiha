@@ -14,6 +14,8 @@ import translationTr from "../Components/locales/translationTr";
 import Footer from "../Sections/Footer/Footer";
 import { initReactI18next } from "react-i18next";
 import i18n from "i18next";
+import MarketPlaceSingl from "../Pages/MarketPLace/MarketPlaceSingl";
+
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -28,6 +30,7 @@ i18n.use(initReactI18next).init({
 })
 
 
+
 function App() {
   return (
     <div className="App">
@@ -37,8 +40,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Maxsulotlar" element={<Maxsulotlar />} />
           <Route path="/Xizmatlar" element={<Xizmatlar />} />
-          <Route path="/MarketPlace" element={<MarketPlace />} />
+          <Route path="/marketplace" element={<MarketPlace />} />
           <Route path="/Aloqa" element={<Aloqa />} />
+          <Route path="/marketplace/:key" element={<MarketPlaceSingl />} />
         </Routes>
       </main>
       <Footer /> 
