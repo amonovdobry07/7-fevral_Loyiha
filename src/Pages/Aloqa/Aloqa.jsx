@@ -140,15 +140,15 @@ export default function Aloqa() {
               <div className="cInfo__lines">
                 <div className="cLine">
                   <div className="cLine__k">Ustaxona</div>
-                  <div className="cLine__v">Shahar / tuman nomi (o‘zgartirasan)</div>
-                </div>
+                  <div className="cLine__v">Buxoro v. G'ijdujon tumani, Degrezon maxalla, sharq ko'chasi, 94-uy</div>
+                </div>                      
                 <div className="cLine">
                   <div className="cLine__k">Ish vaqti</div>
                   <div className="cLine__v">Du-Sha: 09:00–19:00</div>
                 </div>
                 <div className="cLine">
                   <div className="cLine__k">Telefon</div>
-                  <div className="cLine__v">+998 (__) ___ __ __</div>
+                  <div className="cLine__v">+998 90 614 07 18</div>
                 </div>
               </div>
 
