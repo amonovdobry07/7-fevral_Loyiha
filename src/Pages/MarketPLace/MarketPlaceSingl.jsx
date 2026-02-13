@@ -14,22 +14,22 @@ const MARKET_META = {
 
 const PRODUCTS_BY_MARKET = {
   ozon: [
-    { id: "o2", title: "Kichik Haykalchalar", img: p2, url: "https://uz.ozon.com/?utm_source=google&utm_medium=cpc&utm_campaign=Uz_general_product_search_brand_ru_ozon&gad_source=1&gad_campaignid=21492574749&gbraid=0AAAAAD37XSoB8TZilhfYyPMXSHk-uMIW6&gclid=CjwKCAiAtLvMBhB_EiwA1u6_Ppr9p6y1fwi3rJsBitaxYH5jtweQfgQbfAti93HE0AXiL7qD__bD7BoCTMAQAvD_BwE&abt_att=1&origin_referer=www.google.com" },
+   
     { id: "o3", title: "Hayvonlik Haykalchalar", img: p3, url: "https://uz.ozon.com/?utm_source=google&utm_medium=cpc&utm_campaign=Uz_general_product_search_brand_ru_ozon&gad_source=1&gad_campaignid=21492574749&gbraid=0AAAAAD37XSoB8TZilhfYyPMXSHk-uMIW6&gclid=CjwKCAiAtLvMBhB_EiwA1u6_Ppr9p6y1fwi3rJsBitaxYH5jtweQfgQbfAti93HE0AXiL7qD__bD7BoCTMAQAvD_BwE&abt_att=1&origin_referer=www.google.com" },
     { id: "o4", title: "Milliy Haykalchalar", img: p4, url: "https://uz.ozon.com/?utm_source=google&utm_medium=cpc&utm_campaign=Uz_general_product_search_brand_ru_ozon&gad_source=1&gad_campaignid=21492574749&gbraid=0AAAAAD37XSoB8TZilhfYyPMXSHk-uMIW6&gclid=CjwKCAiAtLvMBhB_EiwA1u6_Ppr9p6y1fwi3rJsBitaxYH5jtweQfgQbfAti93HE0AXiL7qD__bD7BoCTMAQAvD_BwE&abt_att=1&origin_referer=www.google.com" },
   ],
   yandex: [
-    { id: "y2", title: "Kichik Haykalchalar", img: p2, url: "https://market.yandex.uz/business--husniddin/216503443?generalContext=t%3DshopInShop%3Bi%3D1%3Bbi%3D216503443%3B&rs=eJwzYv_EyMLBKMEAAAkOAVI%2C&searchContext=sins_ctx" },
+    
     { id: "y3", title: "Hayvonlik Haykalchalar", img: p3, url: "https://market.yandex.uz/card/originalnaya-keramicheskaya-statuetka-s-natsionalnym-koloritom/5139491692?businessId=216503443&showOriginalKmEmptyOffer=1&ogV=-12" },
     { id: "y4", title: "Milliy Haykalchalar", img: p4, url: "https://market.yandex.uz/card/originalnaya-keramicheskaya-statuetka-s-natsionalnym-koloritom-izobrazhayushchaya-pozhilogo-muzhchinu-v-traditsionnoy-odezhde/5139481577?businessId=216503443&showOriginalKmEmptyOffer=1&ogV=-12" },
   ],
   uzum: [
-    { id: "u2", title: "Kichik Haykalchalar", img: p2, url: "https://uzum.uz/uz/product/keramik-haykalcha-qol-mehnati-2405483?skuId=8637399" },
+   
     { id: "u3", title: "Hayvonlik Haykalchalar", img: p3, url: "https://uzum.uz/uz" },
     { id: "u4", title: "Milliy Haykalchalar", img: p4, url: "https://uzum.uz/uz" },
   ],
   wb: [
-    { id: "w2", title: "Kichik Haykalchalar", img: p2, url: "https://www.wildberries.ru/catalog/817972141/detail.aspx?targetUrl=GP" },
+   
     { id: "w3", title: "Hayvonlik Haykalchalar", img: p3, url: "https://www.wildberries.ru/catalog/824904665/detail.aspx?targetUrl=GP" },
     { id: "w4", title: "Milliy Haykalchalar", img: p4, url: "https://www.wildberries.ru/catalog/824899878/detail.aspx?targetUrl=GP" },
   ],
