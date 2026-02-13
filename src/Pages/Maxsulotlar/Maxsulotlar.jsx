@@ -169,8 +169,6 @@ export default function Products() {
                 )}
               </button>
               <div className="pCard__head">
-                <span className="pBadge">{p.badge}</span>
-                <span className="pSku">{p.sku}</span>
               </div>
 
               <div className="pCard__body">
@@ -181,10 +179,7 @@ export default function Products() {
                     <span>{formatSum(p.price)}</span>
                     <small>so‘m</small>
                   </div>
-                  <Stars value={p.rating} />
                 </div>
-
-                <div className="pRev">{p.reviews} ta baho</div>
               </div>
 
               <div className="pCard__line" />

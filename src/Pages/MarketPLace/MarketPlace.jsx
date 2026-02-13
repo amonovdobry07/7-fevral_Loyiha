@@ -42,7 +42,6 @@ export default function MarketPlace() {
   const navigate = useNavigate();
 
   const goTo = (key) => {
-    // 🔥 ichki sahifaga o‘tadi
     navigate(`/MarketPlace/${key}`);
   };
 
@@ -69,11 +68,12 @@ export default function MarketPlace() {
             </p>
 
             <div className="mpSeal__links" role="list">
-              {LINKS.map((l, idx) => (
+              {LINKS.map((l) => (
                 <a
-                  key={idx}
+                  key={l.key}
                   className="mpSeal__link"
-                  href="#"
+                  href={l.href}
+                  target="_blank"
                   rel="noreferrer"
                   role="listitem"
                   onClick={(e) => {
@@ -90,7 +90,9 @@ export default function MarketPlace() {
                     <span className="mpSeal__meta">{l.meta}</span>
                   </div>
 
-                  <span className="mpSeal__go" aria-hidden="true">→</span>
+                  <span className="mpSeal__go" aria-hidden="true">
+                    →
+                  </span>
                 </a>
               ))}
             </div>

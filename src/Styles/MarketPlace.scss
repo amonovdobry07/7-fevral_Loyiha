@@ -1,16 +1,20 @@
 .mpSeal {
   color: rgba(242, 234, 220, 0.86);
   background: linear-gradient(180deg, #07101d, #050a13);
-  padding: 54px 0 70px;
+  padding: 130px 0 70px;
   position: relative;
   overflow: hidden;
+  min-height: 90vh;            /* ✅ kamida ekran balandligi */
+  height: auto;   
 }
 
-.container {
+/* ⚠️ Global .container ni buzmasin */
+.mpSeal .container {
   width: min(1160px, 92%);
   margin: 0 auto;
 }
 
+/* Grid overlay (1px lines) */
 .mpSeal::before {
   content: "";
   position: absolute;
@@ -43,14 +47,27 @@
   letter-spacing: -0.4px;
 }
 
+/* ✅ Panel: 50% zoom artefaktni yo‘qotish */
 .mpSeal__panel {
   border: 1px solid rgba(215, 176, 122, 0.18);
-  background: rgba(0, 0, 0, 0.14);
+  background: rgba(5, 10, 19, 0.75); /* shaffoflik kamaydi */
   padding: 18px;
   position: relative;
   overflow: hidden;
+  transform: translateZ(0);
 }
 
+/* Panel ichida grid ko‘rinib ketmasin */
+.mpSeal__panel::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(5, 10, 19, 0.55);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Glow */
 .mpSeal__panel::before {
   content: "";
   position: absolute;
@@ -62,6 +79,13 @@
     transparent 62%
   );
   pointer-events: none;
+  z-index: 1;
+}
+
+/* Panel ichidagi content ustida turadi */
+.mpSeal__panel > * {
+  position: relative;
+  z-index: 2;
 }
 
 .mpSeal__stamp {
@@ -70,6 +94,7 @@
   margin-bottom: 12px;
   position: relative;
   border: 1px solid rgba(255, 255, 255, 0.08);
+  transform: translateZ(0);
 }
 
 .mpSeal__stampTop {
@@ -103,33 +128,39 @@
   position: relative;
 }
 
-/* ✅ LINKS: endi bitta qatorda (1 column) */
+/* LINKS */
 .mpSeal__links {
   display: grid;
-  grid-template-columns: 1fr; /* ✅ bitta ustun */
+  grid-template-columns: 1fr;
   gap: 12px;
   position: relative;
 }
 
-/* ✅ Katta link card */
+/* ✅ Card: border o‘rniga outline (subpixel kam) */
 .mpSeal__link {
   text-decoration: none;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(0, 0, 0, 0.18);
-  padding: 16px 16px;
+
+  border: 0;
+  outline: 1px solid rgba(255, 255, 255, 0.12);
+  outline-offset: -1px;
+
+  background: rgba(0, 0, 0, 0.32); /* old: 0.18 */
+  padding: 16px;
   min-height: 86px;
 
   display: grid;
-  grid-template-columns: 72px 1fr 30px; /* ✅ katta layout */
+  grid-template-columns: 72px 1fr 30px;
   gap: 14px;
   align-items: center;
 
   transition:
     background 160ms ease,
-    border-color 160ms ease,
+    outline-color 160ms ease,
     transform 160ms ease;
   position: relative;
   overflow: hidden;
+  border-radius: 14px;
+  transform: translateZ(0);
 }
 
 .mpSeal__link::before {
@@ -147,23 +178,25 @@
 }
 
 .mpSeal__link:hover {
-  background: rgba(0, 0, 0, 0.3);
-  border-color: rgba(215, 176, 122, 0.26);
-  transform: translateY(-2px);
+  background: rgba(0, 0, 0, 0.38);
+  outline-color: rgba(215, 176, 122, 0.26);
+  transform: translateY(-2px) translateZ(0);
 }
 
 .mpSeal__link:hover::before {
   opacity: 1;
 }
 
-/* ✅ logo box kattaroq */
 .mpSeal__logoBox {
   width: 72px;
   height: 72px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  outline: 1px solid rgba(255, 255, 255, 0.12);
+  outline-offset: -1px;
   background: rgba(0, 0, 0, 0.22);
   display: grid;
   place-items: center;
+  border-radius: 12px;
+  transform: translateZ(0);
 }
 
 .mpSeal__logo {
@@ -174,7 +207,6 @@
   opacity: 0.92;
 }
 
-/* text */
 .mpSeal__text {
   display: grid;
   gap: 6px;
@@ -202,7 +234,6 @@
   line-height: 1.6;
 }
 
-/* arrow */
 .mpSeal__go {
   justify-self: end;
   color: rgba(224, 192, 139, 0.92);
@@ -216,6 +247,16 @@
 }
 
 /* responsive */
+@media screen and (max-width: 1000px) {
+  .mpSeal {
+  color: rgba(242, 234, 220, 0.86);
+  background: linear-gradient(180deg, #07101d, #050a13);
+  padding: 250px 0 ;
+  position: relative;
+  overflow: hidden;
+}
+
+}
 @media (max-width: 560px) {
   .mpSeal__title {
     font-size: 34px;
