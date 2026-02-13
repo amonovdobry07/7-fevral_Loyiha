@@ -15,8 +15,8 @@ const MARKET_META = {
 const PRODUCTS_BY_MARKET = {
   ozon: [
    
-    { id: "o3", title: "Hayvonlik Haykalchalar", img: p3, url: "https://uz.ozon.com/?utm_source=google&utm_medium=cpc&utm_campaign=Uz_general_product_search_brand_ru_ozon&gad_source=1&gad_campaignid=21492574749&gbraid=0AAAAAD37XSoB8TZilhfYyPMXSHk-uMIW6&gclid=CjwKCAiAtLvMBhB_EiwA1u6_Ppr9p6y1fwi3rJsBitaxYH5jtweQfgQbfAti93HE0AXiL7qD__bD7BoCTMAQAvD_BwE&abt_att=1&origin_referer=www.google.com" },
-    { id: "o4", title: "Milliy Haykalchalar", img: p4, url: "https://uz.ozon.com/?utm_source=google&utm_medium=cpc&utm_campaign=Uz_general_product_search_brand_ru_ozon&gad_source=1&gad_campaignid=21492574749&gbraid=0AAAAAD37XSoB8TZilhfYyPMXSHk-uMIW6&gclid=CjwKCAiAtLvMBhB_EiwA1u6_Ppr9p6y1fwi3rJsBitaxYH5jtweQfgQbfAti93HE0AXiL7qD__bD7BoCTMAQAvD_BwE&abt_att=1&origin_referer=www.google.com" },
+    { id: "o3", title: "Hayvonlik Haykalchalar", img: p3, url: "https://uz.ozon.com/product/statuetka-3530878850/?oos_search=false" },
+    { id: "o4", title: "Milliy Haykalchalar", img: p4, url: "https://uz.ozon.com/product/statuetka-3530873807/?oos_search=false" },
   ],
   yandex: [
     
@@ -25,8 +25,8 @@ const PRODUCTS_BY_MARKET = {
   ],
   uzum: [
    
-    { id: "u3", title: "Hayvonlik Haykalchalar", img: p3, url: "https://uzum.uz/uz" },
-    { id: "u4", title: "Milliy Haykalchalar", img: p4, url: "https://uzum.uz/uz" },
+    { id: "u3", title: "Hayvonlik Haykalchalar", img: p3, url: "https://uzum.uz/uz/product/keramik-haykalcha-qol-mehnati-2405483?skuId=8637399" },
+    { id: "u4", title: "Milliy Haykalchalar", img: p4, url: "https://uzum.uz/uz/product/keramik-haykalcha-qol-mehnati-2405329?skuId=8636764" },
   ],
   wb: [
    
